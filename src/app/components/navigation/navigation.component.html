@@ -1,0 +1,13 @@
+<nav>
+    <input type="checkbox" id="check" [(ngModel)]="isChecked" (ngModelChange)="onChange($event)">
+    <label for="check" class="checkbtn">
+        <i class="fas {{faBarIcon}}"></i>
+    </label>
+	<label class="logo">Lawns Management</label>
+	<ul>
+		<li><a href="#dashboard" routerLink="/">Dashboard</a></li>
+		<li><a href="#events" routerLink="/events">Events</a></li>
+		<li><a href="#expenses" routerLink="/expenses">Expenses</a></li>
+		<li><a href="#photos" routerLink="/photos">Photos</a></li>
+	</ul>
+</nav>
